@@ -1,8 +1,6 @@
 %
 \documentclass[5p,twocolumn,english]{elsarticle}
-%\documentclass[5p]{elsarticle}
-%%\documentclass{cta-author}
-%%\smartqed  % flush right qed marks, e.g. at end of proof
+
 \usepackage{epstopdf}
 \usepackage[caption=false]{subfig}
 \usepackage{hyperref}
@@ -23,7 +21,7 @@
 %\usepackage[justification=justified]{caption}
 %%\usepackage[justification=centering]{caption}
 
-\usepackage{soul}
+%\usepackage{soul}
 
 \DeclareRobustCommand{\hlight}[1]{{\sethlcolor{yellow}\hl{#1}}}
 
@@ -50,8 +48,9 @@
 %% Abstract
 %%
 \begin{abstract}
+
 %% What is new? What is the obtained results (achieved)
-Efficient parking management has become a critical challenge in modern urban environments and large facilities, such as shopping malls, university campuses, and public spaces. Due to physical insufficiency and the inefficient use of parking lots, the significant increase in demand for parking spaces cannot be adequately addressed. This growing disparity between supply and demand leads to congestion, driver frustration, and wasted resources. Traditional parking systems, which rely heavily on manual monitoring or sensor based solutions, often struggle to meet the needs of these dynamic and high demand environments. Expensive implementation costs, limited scalability, and susceptibility to environmental factors further exacerbate the challenges of managing parking efficiently in such contexts.
+Efficient parking management has become a critical challenge in modern urban environments and large facilities, such as shopping malls, university campuses, and public spaces. Due to physical insufficiency and the inefficient use of parking lots, the significant increase in demand for parking spaces cannot be adequately addressed. This growing disparity between supply and demand leads to congestion, driver frustration, and wasted resources. Traditional parking systems, which rely heavily on manual monitoring or sensor based solutions, often struggle to meet the needs of these dynamic and high demand environments. Expensive implementation costs, limited scalability, and susceptibility to environmental factors further exacerbate the challenges of managing parking efficiently in such contexts. Bu makalede yeni olan nedir? YAZILACAK. Bu çalışma sonunda elde edilen başarı nedir YAZILACAK.
 \end{abstract}
 
 \begin{keyword}
@@ -72,12 +71,12 @@ Efficient parking management has become a critical challenge in modern urban env
 \label{sec_intro}
 
 %% Giris, motivation
- 
+Efficient parking management has become a critical challenge in modern urban environments and large facilities, such as shopping malls, university campuses, and public spaces.
 
-% Why do we need multiple cameras? 
+% Why do we need open park management and vision based system? 
 Traditional parking space management systems focus on monitoring vehicle movement using various tools. While these systems generally provide a basic overview of parking lot occupancy, they suffer from significant limitations, particularly in terms of scalability and reliability. Moreover, traditional systems are prone to maintenance issues and hardware failures, leading to periods of downtime where data collection becomes inconsistent or inaccurate. This unreliability creates gaps in the data, preventing parking lot administrators from gaining actionable insights or optimizing operations effectively. In short, there is a pressing need for a robust, efficient system capable of continuously collecting and processing data for parking space management, ensuring real-time insights and operational reliability under diverse conditions. 
 
-% Existing approaches with multiple cameras
+% Existing approaches
   
 
 
@@ -89,12 +88,12 @@ Traditional parking space management systems focus on monitoring vehicle movemen
 % Fig 1
 \begin{figure}[t]
 	\centering
-%	\includegraphics[width=0.35\textwidth]{figs/pdf/intersection_single.pdf}
+	\includegraphics[width=0.35\textwidth]{figs/fig1.pdf}
 	\caption{Single camera vehicle detection and tracking.}
 	\label{fig1}
 \end{figure}
 
-This study focus on centralized algorithmic method development for multiple video-stream that comes from cheap multiple cameras simultaneously. The proposed system can be used in an integrated management system that combines real-time vehicle tracking, speed analysis, and entry/exit counting. Hence, the research aim is to extend the view in one axis region without requiring expensive hardware for video stream processing. We introduce a "virtual context" concept which refers to a single large frame which is formed by combining synchronized and normalized video frames coming from separate cameras. In this solution, detector and tracker algorithm input will be one large frame, where complex object/vehicle fusion tasks are not necessary as studied in some other work \cite{NEEDED}.
+This study focus on centralized algorithmic method development for multiple video-stream that comes from cheap multiple cameras simultaneously. The proposed system can be used in an integrated management system that combines real-time vehicle tracking, speed analysis, and entry/exit counting. Hence, the research aim is to extend the view in one axis region without requiring expensive hardware for video stream processing. We introduce a "virtual context" concept which refers to a single large frame which is formed by combining synchronized and normalized video frames coming from separate cameras. In this solution, detector and tracker algorithm input will be one large frame, where complex object/vehicle fusion tasks are not necessary as studied in some other work \cite{land11060886}.
 
 In this study, the frames are normalized and synchronized to form a single meaningful virtual context based on the multi-camera setup. The problematic situations and proposed solutions are listed as follows:
 \begin{itemize}
@@ -217,7 +216,7 @@ In this study, a new concept "virtual context" introduced for multi-camera based
 
 
 \bibliographystyle{ieeetr}
-\bibliography{multi_camera}
+\bibliography{open_park}
 \end{document}
 
 
